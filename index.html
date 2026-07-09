@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eiei Games</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <main class="container">
+        <h1 class="logo">
+            eiei<span class="logo-accent">games</span>
+        </h1>
+        <p class="tagline">Europe</p>
+        <div class="divider" aria-hidden="true"></div>
+
+        <section class="games-grid" aria-label="Games">
+            <a
+                class="game-card game-card-link"
+                href="https://old-time-text-adventure.fly.dev"
+                target="_blank"
+                rel="noreferrer"
+            >
+                <img
+                    class="game-card-image"
+                    src="assets/text-game.png"
+                    alt="Old Time Text Adventure preview"
+                >
+                <div class="game-card-badge">Live Now</div>
+                <h2 class="game-card-title">Old Time Text Adventure</h2>
+                <p class="game-card-text">
+                    A playable browser adventure with grim choices, strange places, and old-school text-driven storytelling.
+                </p>
+                <span class="game-card-cta">Play at old-time-text-adventure.fly.dev</span>
+            </a>
+
+            <article class="game-card game-card-placeholder">
+                <div class="game-card-badge">Coming Soon</div>
+                <h2 class="game-card-title">Sepsis 2.0</h2>
+                <p class="game-card-text">
+                    The next project is incubating now. Expect a sharper, stranger follow-up in the next few weeks.
+                </p>
+                <span class="game-card-cta">Placeholder activated</span>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

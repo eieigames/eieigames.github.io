@@ -50,12 +50,6 @@ body::after {
     animation: float 12s ease-in-out infinite alternate-reverse;
 }
 
-#app {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .container {
     text-align: center;
     padding: 2rem;
@@ -168,6 +162,52 @@ body::after {
     color: var(--green-soft);
     font-size: 0.95rem;
     font-weight: 600;
+}
+
+.game-page {
+    text-align: left;
+}
+
+.game-page-card {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.game-page-title {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: var(--green-soft);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    color: var(--green-bright);
+}
+
+.launch-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.9rem 1.2rem;
+    border: 1px solid rgba(0, 255, 123, 0.42);
+    border-radius: 999px;
+    color: var(--green-bright);
+    text-decoration: none;
+    font-weight: 700;
+    background: rgba(76, 0, 255, 0.14);
+}
+
+.launch-button:hover,
+.launch-button:focus-visible {
+    border-color: rgba(0, 255, 123, 0.7);
+    box-shadow: 0 0 24px rgba(0, 255, 123, 0.18);
 }
 
 @keyframes float {
