@@ -1,0 +1,204 @@
+:root {
+    --bg: #000010;
+    --green: #00ff08;
+    --green-bright: #00ff3c;
+    --green-soft: #00ff7b;
+    --violet: #4c00ff;
+    --surface: rgba(8, 10, 28, 0.82);
+    --surface-border: rgba(0, 255, 123, 0.24);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--green);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(102, 252, 102, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+    top: 20%;
+    left: 25%;
+    z-index: 1;
+    animation: float 8s ease-in-out infinite alternate;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(78, 205, 78, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
+    bottom: 15%;
+    right: 20%;
+    z-index: 1;
+    animation: float 12s ease-in-out infinite alternate-reverse;
+}
+
+#app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    z-index: 2;
+    width: min(100%, 920px);
+}
+
+.logo {
+    font-size: clamp(3rem, 9vw, 5rem);
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: var(--green-bright);
+    margin-bottom: 0.5rem;
+    text-transform: lowercase;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.logo-accent {
+    color: var(--violet);
+}
+
+.tagline {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--green-soft);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.divider {
+    height: 2px;
+    width: 50px;
+    background-color: var(--violet);
+    margin: 0 auto 2rem;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+    text-align: left;
+}
+
+.game-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    min-height: 250px;
+    padding: 1.4rem;
+    border: 1px solid var(--surface-border);
+    border-radius: 22px;
+    background: linear-gradient(180deg, rgba(15, 18, 40, 0.96) 0%, var(--surface) 100%);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(8px);
+}
+
+.game-card-link {
+    color: inherit;
+    text-decoration: none;
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.game-card-link:hover,
+.game-card-link:focus-visible {
+    transform: translateY(-4px);
+    border-color: rgba(0, 255, 123, 0.55);
+    box-shadow: 0 22px 50px rgba(76, 0, 255, 0.22);
+}
+
+.game-card-placeholder {
+    border-style: dashed;
+    opacity: 0.88;
+}
+
+.game-card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 255, 123, 0.18);
+}
+
+.game-card-badge {
+    width: fit-content;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(76, 0, 255, 0.18);
+    color: var(--green-soft);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.game-card-title {
+    color: var(--green-bright);
+    font-size: 1.55rem;
+    line-height: 1.1;
+}
+
+.game-card-text {
+    color: #b7b5ff;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.game-card-cta {
+    color: var(--green-soft);
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        transform: translateY(20px) scale(1.1);
+    }
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 0.95;
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(102, 252, 241, 0.2);
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        align-items: flex-start;
+        padding: 2rem 0;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+}
