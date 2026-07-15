@@ -3,35 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Old Time Text Adventure | Eiei Games</title>
+
+    <title>Old Time Text Adventure – AI Browser Game | Eiei Games</title>
+    <meta
+        name="description"
+        content="Play Old Time Text Adventure, a browser-based AI text adventure where you type actions in natural language and explore atmospheric story scenarios."
+    >
+    <link rel="canonical" href="https://eieigames.com/text-adv.html">
     <link rel="stylesheet" href="styles.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Eiei Games">
+    <meta property="og:title" content="Old Time Text Adventure – AI Browser Game">
+    <meta
+        property="og:description"
+        content="Type any action in natural language and explore atmospheric, AI-generated adventure scenarios in your browser."
+    >
+    <meta property="og:url" content="https://eieigames.com/text-adv.html">
+    <meta property="og:image" content="https://eieigames.com/assets/text-game.png">
+    <meta property="og:image:alt" content="A scene from Old Time Text Adventure">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Old Time Text Adventure – AI Browser Game">
+    <meta
+        name="twitter:description"
+        content="A browser text adventure with natural-language input and atmospheric AI-generated scenarios."
+    >
+    <meta name="twitter:image" content="https://eieigames.com/assets/text-game.png">
 </head>
 <body>
     <main class="container game-page">
-        <a class="back-link" href="index.html">Back to eieigames</a>
-        <section class="game-card game-page-card" aria-label="Old Time Text Adventure">
+        <header class="site-header compact-header">
+            <a class="logo-link" href="/" aria-label="Eiei Games home">
+                <span class="logo logo-small">eiei<span class="logo-accent">games</span></span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="/">Home</a>
+                <a href="text-adv.html" aria-current="page">Old Time Text Adventure</a>
+                <a href="sepsis-2.html">Sepsis 2.0</a>
+            </nav>
+        </header>
+
+        <article class="game-detail">
             <img
-                class="game-card-image"
+                class="game-hero-image"
                 src="assets/text-game.png"
-                alt="Old Time Text Adventure preview"
+                width="300"
+                height="155"
+                alt="A scene from Old Time Text Adventure"
             >
-            <div class="game-card-badge">Live Now</div>
-            <h1 class="game-card-title game-page-title">Old Time Text Adventure</h1>
-            <p class="game-card-text">
-                A playable browser adventure with grim choices, strange places, and old-school text-driven storytelling.
+
+            <div class="game-card-badge">Playable Now</div>
+            <h1>Old Time Text Adventure</h1>
+            <p class="lead">
+                An AI-powered browser text adventure where the command parser understands natural language.
+                Choose a scenario, describe what your character does, and continue through a story that reacts
+                to your decisions.
             </p>
-            <p class="game-card-text">
-                Built for players who like atmosphere, decision-making, and a little doom in their fantasy.
-            </p>
+
             <a
                 class="launch-button"
                 href="https://old-time-text-adventure.fly.dev"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
             >
-                Launch the game
+                Play Old Time Text Adventure
             </a>
-        </section>
+
+            <section aria-labelledby="how-it-works">
+                <h2 id="how-it-works">How it works</h2>
+                <p>
+                    Instead of selecting from a fixed list of commands, you can write actions in your own words.
+                    The game uses your recent choices and the selected adventure scenario to generate the next scene.
+                </p>
+            </section>
+
+            <section aria-labelledby="features">
+                <h2 id="features">Game features</h2>
+                <ul class="feature-list">
+                    <li>Natural-language commands rather than a traditional verb parser.</li>
+                    <li>Several adventure settings with different tones and objectives.</li>
+                    <li>Old-school text-game presentation with modern AI-driven storytelling.</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="play-in-browser">
+                <h2 id="play-in-browser">Play in your browser</h2>
+                <p>
+                    The game opens as a web application and does not require a separate installation. It is hosted
+                    independently from this company page, so the play button opens the game in a new tab.
+                </p>
+            </section>
+        </article>
+
+        <footer class="site-footer">
+            <p><a href="/">Back to Eiei Games</a></p>
+        </footer>
     </main>
 </body>
 </html>
