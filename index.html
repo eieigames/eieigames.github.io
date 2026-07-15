@@ -1,105 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Eiei Games | Independent Browser and Mobile Games</title>
     <meta
-        name="description"
-        content="Eiei Games creates unusual browser and mobile games. Play Old Time Text Adventure and follow the development of Sepsis 2.0."
-    >
-    <link rel="canonical" href="https://eieigames.com/">
-    <link rel="stylesheet" href="styles.css">
+      name="description"
+      content="Eiei Games creates unusual browser and mobile games. Play Old Time Text Adventure and follow the development of Sepsis 2.0."
+    />
+    <link rel="canonical" href="https://eieigames.com/" />
+    <link rel="stylesheet" href="styles.css" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Eiei Games">
-    <meta property="og:title" content="Eiei Games | Independent Browser and Mobile Games">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Eiei Games" />
     <meta
-        property="og:description"
-        content="Play Old Time Text Adventure and follow the development of Sepsis 2.0, a mobile tactics game about microbes and the immune system."
-    >
-    <meta property="og:url" content="https://eieigames.com/">
+      property="og:title"
+      content="Eiei Games | Independent Browser and Mobile Games"
+    />
+    <meta
+      property="og:description"
+      content="Play Old Time Text Adventure and follow the development of Sepsis 2.0, a mobile tactics game about microbes and the immune system."
+    />
+    <meta property="og:url" content="https://eieigames.com/" />
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Eiei Games | Independent Browser and Mobile Games">
+    <meta name="twitter:card" content="summary" />
     <meta
-        name="twitter:description"
-        content="Unusual browser and mobile games from an independent Finnish developer."
-    >
+      name="twitter:title"
+      content="Eiei Games | Independent Browser and Mobile Games"
+    />
+    <meta
+      name="twitter:description"
+      content="Unusual browser and mobile games from an independent european developer."
+    />
 
     <script type="application/ld+json">
-    {
+      {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Eiei Games",
         "alternateName": "EieiGames",
         "url": "https://eieigames.com/"
-    }
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <main class="container">
-        <header class="site-header">
-            <a class="logo-link" href="/" aria-label="Eiei Games home">
-                <span class="logo">eiei<span class="logo-accent">games</span></span>
-            </a>
-            <p class="tagline">Independent games from Finland</p>
-            <nav class="site-nav" aria-label="Main navigation">
-                <a href="/" aria-current="page">Home</a>
-                <a href="text-adv.html">Old Time Text Adventure</a>
-                <a href="sepsis-2.html">Sepsis 2.0</a>
-            </nav>
-        </header>
+      <header class="site-header">
+        <a class="logo-link" href="/" aria-label="Eiei Games home">
+          <span class="logo">eiei<span class="logo-accent">games</span></span>
+        </a>
+        <p class="tagline">FROM EUROPE</p>
+      </header>
 
-        <div class="divider" aria-hidden="true"></div>
+      <section class="games-grid" aria-label="Games">
+        <a class="game-card game-card-link" href="text-adv.html">
+          <img
+            class="game-card-image"
+            src="assets/text-game.png"
+            width="300"
+            height="155"
+            alt="A scene from Old Time Text Adventure"
+          />
+          <div class="game-card-badge">Live Now</div>
+          <h2 class="game-card-title">Old Time Text Adventure</h2>
+          <p class="game-card-text">
+            The text adventure games from 80's; now parser replaced by an LLM
+          </p>
+          <p class="game-card-text">
+            Embark on a mind-boggling adventure giving your instructions in plain natural language.
+          </p>
+          <span class="game-card-cta">Learn more and play</span>
+        </a>
 
-        <section class="intro" aria-labelledby="intro-title">
-            <h1 id="intro-title">Browser adventures and mobile strategy games</h1>
-            <p>
-                Eiei Games is an independent game project creating unusual narrative and strategy games.
-                Play an AI-powered text adventure in your browser and follow the development of a tactical
-                mobile game about microbes, tissue, and the immune system.
-            </p>
-        </section>
+        <a
+          class="game-card game-card-link game-card-development"
+          href="sepsis-2.html"
+        >
+          <div class="game-card-visual" aria-hidden="true">
+            <span class="microbe microbe-one"></span>
+            <span class="microbe microbe-two"></span>
+            <span class="microbe microbe-three"></span>
+          </div>
+          <div class="game-card-badge">In Development</div>
+          <h2 class="game-card-title">Sepsis 2.0</h2>
+          <p class="game-card-text">
+            Sequel to the legendary 90's Turbo Pascal game.
+          </p><p class="game-card-text">
+            Take the role of a microbe and try to do your worse...
+          </p>
+          <span class="game-card-cta">Read about the game</span>
+        </a>
+      </section>
 
-        <section class="games-grid" aria-label="Games">
-            <a class="game-card game-card-link" href="text-adv.html">
-                <img
-                    class="game-card-image"
-                    src="assets/text-game.png"
-                    width="300"
-                    height="155"
-                    alt="A scene from Old Time Text Adventure"
-                >
-                <div class="game-card-badge">Live Now</div>
-                <h2 class="game-card-title">Old Time Text Adventure</h2>
-                <p class="game-card-text">
-                    A browser-based AI text adventure where you type actions in natural language and explore
-                    atmospheric story scenarios.
-                </p>
-                <span class="game-card-cta">Learn more and play</span>
-            </a>
-
-            <a class="game-card game-card-link game-card-development" href="sepsis-2.html">
-                <div class="game-card-visual" aria-hidden="true">
-                    <span class="microbe microbe-one"></span>
-                    <span class="microbe microbe-two"></span>
-                    <span class="microbe microbe-three"></span>
-                </div>
-                <div class="game-card-badge">In Development</div>
-                <h2 class="game-card-title">Sepsis 2.0</h2>
-                <p class="game-card-text">
-                    A mobile tactics game in which microbes divide, spread through tissue, release toxins,
-                    and try to outmaneuver the immune system.
-                </p>
-                <span class="game-card-cta">Read about the game</span>
-            </a>
-        </section>
-
-        <footer class="site-footer">
-            <p>© 2026 Eiei Games</p>
-        </footer>
+      <footer class="site-footer">
+        <p>© 2026 Eiei Games</p>
+      </footer>
     </main>
-</body>
+  </body>
 </html>
